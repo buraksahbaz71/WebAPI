@@ -1,0 +1,23 @@
+﻿@model List<DurakViewModel>
+
+<h2>Durak Listesi</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Durak No</th>
+            <th>Durak Adı</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.id</td>
+                <td>@product.durak_no</td>
+                <td>@product.durak_adi</td>
+            </tr>
+        }
+    </tbody>
+</table>
